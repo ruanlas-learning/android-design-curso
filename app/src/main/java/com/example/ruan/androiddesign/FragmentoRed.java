@@ -68,6 +68,7 @@ public class FragmentoRed extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        //////////////////////////////////////////////////////////////////////////////////
         // Inflate the layout for this fragment
         vista = inflater.inflate(R.layout.fragment_fragmento_red, container, false);
 
@@ -80,6 +81,7 @@ public class FragmentoRed extends Fragment {
         });
 
         return vista;
+        //////////////////////////////////////////////////////////////////////////////////////
     }
 
     // TODO: Rename method, update argument and hook method into UI event
