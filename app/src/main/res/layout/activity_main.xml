@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,16 +23,22 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/btnAzul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Botão 1"/>
+            android:text="Azul"/>
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/btnVermelho"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Botão 2"/>
+            android:text="Vermelho"/>
+
+        <Button
+            android:id="@+id/btnVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verde"/>
 
         <!--<fragment-->
             <!--android:id="@+id/fragAzul"-->
@@ -55,4 +62,11 @@
 
     </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <FrameLayout
+        android:id="@+id/conteudoFragmento"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
