@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -71,6 +72,12 @@ public class FragmentoRed extends Fragment {
         vista = inflater.inflate(R.layout.fragment_fragmento_red, container, false);
 
         btnVermelho = (Button)vista.findViewById(R.id.btnFrag);
+        btnVermelho.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "Precionou", Toast.LENGTH_LONG).show();
+            }
+        });
 
         return vista;
     }
